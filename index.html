@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US" 
 <head>
-<title>Jose Vera Bio</title>
+<title>Jose Vera Home</title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
   integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/4b9cce08f4.js" crossorigin="anonymous"></script>
@@ -65,7 +65,7 @@ animation: fadein 2s;
     }
 }
 
-h1, h4 {
+h1, h4, h3 {
   color: #4f5059
 
 }
@@ -74,9 +74,49 @@ h4 {
   margin-bottom: 30px
 }
 
-      </style>
-</head>
+img {
+    float: none;
+    text-align: center;
+    margin: 0px auto;
+    border-width: 18px;
+    border-style: solid;
+    border-color: #e8e3e7;
+    border-image: initial;
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+}
 
+.img-fluid {
+  max-width: 74%;
+  height: auto;
+}
+
+.about {
+  padding: 100px;
+}
+
+.badge {
+  border: 1px solid #0bceaf;
+  padding: 6px;
+  color: #4f5059;
+}
+
+#techs {
+  padding: 32px;
+  /* position:relative; */
+  vertical-align: middle;
+}
+
+footer {
+  border-top: 1px solid #0bceaf;
+  background-color: #f7f7f7;
+  height: 32px;
+  font-size: 12px;
+}
+
+</style>
+</head>
 <body>
 
   <nav
@@ -101,58 +141,82 @@ h4 {
     </div>
   </nav>
 
+  <!-- NAME AND PHOTO WELCOME MAIN BODY -->
+
   <section class=main>
-    <div class="container">
-      <!-- First row with 3 columns -->
-        <div class="row">
-            <div class="col">
-      <!-- <h5 class="card-title">About Me</h5> -->
-      <span id="test"><p class="p-2 mb-1 text-white font-weight-bold rounded-right">Hello I'm </p></span>
-      <!-- <div id="fade"></div> -->
-      </div>
-      <div class="col-6">
-        </div>
-        <div class="col">
-        </div>
-      <!-- <div class="container"> -->
+      <div class="container">
         <div class="row">
           <div class="col" id="fade">
-            
+              <span id="test"><p class="p-2 mb-1 text-white font-weight-bold rounded-right">Hello I'm </p></span>
             <!-- <img src="./assets/images/me.jpg" class="img-fluid" alt="Responsive image"> -->
             <h1 class="font-weight-bold">Jose D. Vera</h1>
             <h4 class="font-weight-bold">Web Developer</h4>
             <a href="mailto:jdvera1@gmail.com" class="p-2 text-dark fas fa-envelope"></a>
             <a href="https://www.linkedin.com/in/jdvera" class="p-2 text-dark fab fa-linkedin"></a>
             <a href="https://github.com/jdver"><i class="p-2 text-dark fab fa-github"></i></a>
-          <!-- maybe div...give it an id and try that🤔 -->
           </div>
-          <div class="col">
-            <p>Hello World, I am Jose Vera and am a young working-professional who is now attending Coding Bootcamp at
-              UC Berkeley Extension to learn some new skills and hopefully change career industries. Most of my career
-              background has been in higher education, which I have enjoyed and learned a lot from. I have a great sense
-              of fulfillment helping students navigate their college careers. After being in the field for several
-              years, I now have a desire to explore other options, and coding sounded like the most exciting and
-              rewarding. I am excited by how many diverse job opportunities are available as a web developer, and look
-              forward to beginning a new career.</p>
+          <div class="col" id="border">
+              <img src="./assets/images/IMG_9805.jpg" class="img-fluid" alt="Responsive image">
           </div>
+
         </div>
 
 
       </div>
   </section>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <!-- ABOUT ME SECTION -->
+
+  <section class=about>
+    <div class="container">
+    <div class="row">
+
+          <!-- working code -->
+      <!-- <div class="col" id="techs">
+          <div id="div1"><span class="badge">html</span></div>
+          <div id="div2"><span class="badge">css</span></div>
+          <div id="div3"><span class="badge">javascript</span></div>
+          <div id="div4"><span class="badge">react</span></div>
+          <div id="div5"><span class="badge">node.js</span></div>
+          <div id="div6"><span class="badge">mongodb</span></div>
+      </div> -->
+
+      <table style="height: 100px;" id="techs">
+          <tbody>
+            <tr>
+      <!-- <div class="col" id="techs"> -->
+          <td class="align-top" id="div1"><span class="badge">html</span></td>
+          <td class="align-middle" id="div2"><span class="badge">css</span></td>
+          <td class="align-top" id="div3"><span class="badge">javascript</span></td>
+          <td class="align-middle" id="div4"><span class="badge">react</span></td>
+          <td class="align-top" id="div5"><span class="badge">node.js</span></td>
+          <td class="align-middle" id="div6"><span class="badge">mongodb</span></td>
+      <!-- </div>  -->
+      </tr>
+      </tbody>
+      </table>
+
+
+      <div class="col">
+          <h3 class="font-weight-bold">About Me</h3>
+          <p>Lifelong learner who has dedicated most of my career to education, and recently transitioned to become a full-stack web developer. My passion for learning and challenging myself pushed me to complete coding bootcamp at UC Berkeley Extension, where I discovered a strong interest and skill in front and back end development, especially Node.js, Javascript and HTML/CSS. I am a highly motivated problem-solver with strong interpersonal skills that enjoys working alone or with a team towards creating fun, welcoming applications featuring strong functionality. </p>
+        </div>
+      </div>
+  
+  </section>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+</body>
 
-  <footer>
-    <div class="container">
-      &copy; Copyright 2019 Jose D Vera
-    </div>
-  </footer>
+<footer>
+  <div class="container">
+    &copy; Copyright 2019 Jose D Vera
+  </div>
+</footer>
 
-  <script>
+<script>
   document.getElementById("test").children[0].className += " load";
 
-  </script>
+</script>
