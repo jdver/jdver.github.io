@@ -7,68 +7,197 @@
   <title>Portfolio | JD Vera</title>
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<style>
+
+h1 {
+  color: #4f5059;
+  padding-bottom: 20px;
+
+}
+
+
+img {
+ 
+    height: 165px;
+    width: 255px;
+    border: 1px solid #0bceaf;
+    /* margin-bottom: 20px; */
+
+}
+
+.col-sm {
+  margin-bottom: 25px;
+}
+
+p {
+    position: absolute;
+    bottom: 20px;
+    width: 255px;
+    padding: 12px;
+    margin-bottom: 0;
+    font-weight: 300;
+    line-height: 30px;
+    color: #e8e3e7;
+    text-align: center;
+    background: #e8e3e7;
+    border-bottom: 0;
+    font-size: 15px;
+
+}
+
+a {
+  color: #4f5059;
+}
+
+
+footer {
+  border-top: 1px solid #0bceaf;
+  background-color: #f7f7f7;
+  height: 32px;
+  font-size: 12px;
+  margin-top: 60px;
+}
+
+</style>
+
 </head>
 
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container content-width">
-            <a class="navbar-brand" href="index.html">Jose D. Vera</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                 <span class="navbar-toggler-icon"></span>
-            </button>
-              <div class="collapse navbar-collapse" id="navbarText">
-                 <ul class="navbar-nav mr-auto">
-                  <li class="nav-item active">
-                   <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="portfolio.html">Portfolio</a>
-                </li>                    
-                <li class="nav-item">
-                     <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-              </ul>
-
-            </div>
-</nav>
-
-<div class="container">
-    <div class="card text-white bg-info mb-3" style="max-width: 18rem;"></div>
-      <h5 class="card-title">Portfolio</h5>
+    <nav
+    class="navbar navbar-expand-lg navbar-light bg-light border-top-0 rounded-bottom shadow p-3 mb-5 bg-white rounded">
+    <!-- new code below -->
+    <div class="mx-auto d-sm-flex d-block flex-sm-nowrap>
+                  <div class=" collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link  font-weight-bold" href="index.html">About <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+        <li class="nav-item active">
+          <a class="nav-link font-weight-bold" href="portfolio.html">Portfolio</a>
+        </li>
+        <li class="nav-item">
+        <li class="nav-item active">
+          <a class="nav-link font-weight-bold" href="contact.html">Contact</a>
+        </li>
+      </ul>
     </div>
+    </div>
+  </nav>
 
-<div class="container">
+  <!-- PORTFOLIO BODY -->
+
+
+<div id="main-container" class="container">
+  <section class="main-section">
+    <h1>Portfolio</h1>
+    <div class="container">
         <div class="row">
-            <div class="col">
-              <a href="https://jdver.github.io/Project-1/">
-                <img src="./assets/images/port1.jpg" alt="pic1" width="210" height="175">Project 1</div>
-            </a>
-                    <div class="col">
-                      <a href="https://jdver.github.io/Psychic-Game/">
-                        <img src="./assets/images/port2.jpg" alt="pic2" width="210" height="175">Psychic Game</div>
-                    </a>
-            <div class="w-100"></div>
-            <div class="col">
-              <a href="https://jdver.github.io/TriviaGame/">
-                <img src="./assets/images/tree.jpg" alt="pic3" width="210" height="175">Trivia Game</div>
-            </a>
-            <div class="col">
-              <a href="https://jdver.github.io/Basic-Portfolio/">
-                <img src="./assets/images/tree2.jpg" alt="pic4" width="210" height="175">Basic Portfolio</div>
-              </a>
-              <div class="w-100"></div>
-            <div class="col">
-              <a href="https://best-project-2-ever-created.herokuapp.com/">
-                <img src="./assets/images/img1.jpg" alt="pic3" width="210" height="175">Project 2</div>
-            </a>
-            
+          <div class="col-sm">
+            <img src="assets/images/crystal.jpg" alt="Crystal Collector" class="rounded">
+            <p>
+              <a href="https://jdver.github.io/Crystal-Collector-Game/" class="font-weight-bold">Crystal Collector</a>
+               | 
+              <a href="https://github.com/jdver/Crystal-Collector-Game" class="font-weight-bold">GitHub repo</a>
+            </p>
+          </div>
+          <div class="col-sm">
+              <img src="assets/images/books.jpg" alt="goodQuotes" class="rounded">
+              <p>
+                <a href="https://best-project-2-ever-created.herokuapp.com/" class="font-weight-bold">goodQuotes</a>
+                 | 
+                <a href="https://github.com/jdver/goodQuotes" class="font-weight-bold">GitHub repo</a>
+              </p>
+          </div>
+          <div class="col-sm">
+              <img src="assets/images/shop.jpg" alt="bamazon" class="rounded">
+              <p>
+                <a href="https://jdver.github.io/bAmazon/" class="font-weight-bold">bAmazon (Node.js)</a>
+                 | 
+                <a href="https://github.com/jdver/bAmazon" class="font-weight-bold">GitHub</a>
+              </p>
+          </div>
         </div>
-    </div>
+      </div>
+      <div class="container">
+          <div class="row">
+            <div class="col-sm">
+                <img src="assets/images/outdoors.jpg" alt="getout" class="rounded">
+                <p>
+                  <a href="https://jdver.github.io/Project-1/" class="font-weight-bold">Get Out More</a>
+                   | 
+                  <a href="https://github.com/jdver/Project-1" class="font-weight-bold">GitHub repo</a>
+                </p>
+            </div>
+            <div class="col-sm">
+                <img src="assets/images/trivia.jpg" alt="trivia" class="rounded">
+                <p>
+                  <a href="https://jdver.github.io/TriviaGame/" class="font-weight-bold">Disney Trivia</a>
+                   | 
+                  <a href="https://github.com/jdver/TriviaGame" class="font-weight-bold">GitHub repo</a>
+                </p>
+            </div>
+            <div class="col-sm">
+                <img src="assets/images/giphy.jpg" alt="giftastic" class="rounded">
+                <p>
+                  <a href="https://jdver.github.io/Giftastic/" class="font-weight-bold">Giftastic TV</a>
+                   | 
+                  <a href="https://github.com/jdver/Giftastic" class="font-weight-bold">GitHub repo</a>
+                </p>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+            <div class="row">
+              <div class="col-sm">
+                  <img src="assets/images/psychic.jpg" alt="psychic" class="rounded">
+                <p>
+                  <a href="https://jdver.github.io/Psychic-Game/" class="font-weight-bold">Psychic Game</a>
+                   | 
+                  <a href="https://github.com/jdver/Psychic-Game" class="font-weight-bold">GitHub repo</a>
+                </p>
+              </div>
+              <div class="col-sm">
+                  <img src="assets/images/gamemeet.jpg" alt="gaming" class="rounded">
+                  <p>
+                    <a href="https://seekingplayertwo.herokuapp.com/" class="font-weight-bold">Game Meet</a>
+                     | 
+                    <a href="https://github.com/jdver/Project-3" class="font-weight-bold">GitHub repo</a>
+                  </p>
+              </div>
+              <div class="col-sm">
+                  <img src="assets/images/friends.jpg" alt="friends" class="rounded">
+                  <p>
+                    <a href="https://sleepy-reef-83945.herokuapp.com/" class="font-weight-bold">Friend Finder</a>
+                     | 
+                    <a href="https://github.com/jdver/FriendFinder" class="font-weight-bold">GitHub repo</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+              <div class="row">
+                <div class="col-sm">
+                  
+                </div>
+                <div class="col-sm">
+                    <img src="assets/images/concert.jpg" alt="liri" class="rounded">
+                    <p>
+                      <a href="https://jdver.github.io/liri-node-app/" class="font-weight-bold">Liri Bot (Node.js)</a>
+                       | 
+                      <a href="https://github.com/jdver/liri-node-app" class="font-weight-bold">GitHub</a>
+                    </p>
+                </div>
+                <div class="col-sm">
+                  
+                </div>
+              </div>
+            </div>
+  </section>
 
-    </section>
-
-  </div>
+  
 
   <footer>
     <div class="container">
