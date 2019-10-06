@@ -1,2 +1,3 @@
-# Bootstrap-Portfolio
-Homework #2
+## JD Vera Portfolio
+
+My professional work portfolio
