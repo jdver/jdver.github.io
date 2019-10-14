@@ -29,6 +29,8 @@ img {
 
 .col-sm {
   margin-bottom: 25px;
+   /* position: relative; */
+  /* width: 50%;  */
 }
 
 p {
@@ -59,6 +61,38 @@ footer {
   height: 32px;
   font-size: 12px;
   margin-top: 60px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 14px;
+  right: 0;
+  height: 165px;
+  width: 255px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #0bceaf;
+  visibility: hidden;
+}
+
+.col-sm:hover .overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.text {
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  top: 24%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 200px;
 }
 
 </style>
@@ -96,107 +130,192 @@ footer {
   <section class="main-section">
     <h1>Portfolio</h1>
     <div class="container">
-        <div class="row">
-          <div class="col-sm">
-            <img src="assets/images/crystal.jpg" alt="Crystal Collector" class="rounded">
+
+      <!-- Row 1 -->
+      <div class="row">
+        <div class="col-sm">
+          <img src="assets/images/crystal.jpg" alt="Crystal Collector" class="rounded">
+          <p>
+            <a href="https://jdver.github.io/Crystal-Collector-Game/" class="font-weight-bold">Crystal Collector</a>
+            |
+            <a href="https://github.com/jdver/Crystal-Collector-Game"><i class="p-2 text-light fab fa-github"></i></a>
+          </p>
+          <div class="overlay rounded">
+            <div class="text">Randomized target game <br> JavaScript, jQuery</div>
             <p>
               <a href="https://jdver.github.io/Crystal-Collector-Game/" class="font-weight-bold">Crystal Collector</a>
-               | 
+              |
               <a href="https://github.com/jdver/Crystal-Collector-Game"><i class="p-2 text-light fab fa-github"></i></a>
             </p>
           </div>
+        </div>
+        <div class="col-sm">
+          <img src="assets/images/books.jpg" alt="goodQuotes" class="rounded">
+          <p>
+            <a href="https://best-project-2-ever-created.herokuapp.com/" class="font-weight-bold">goodQuotes</a>
+            |
+            <a href="https://github.com/jdver/goodQuotes"><i class="p-2 text-light fab fa-github"></i></a>
+          </p>
+          <div class="overlay rounded">
+            <div class="text">Movie quote database <br> mySQL, Express, Heroku</div>
+            <p>
+              <a href="https://best-project-2-ever-created.herokuapp.com/" class="font-weight-bold">goodQuotes</a>
+              |
+              <a href="https://github.com/jdver/goodQuotes"><i class="p-2 text-light fab fa-github"></i></a>
+            </p>
+          </div>
+        </div>
+        <div class="col-sm">
+          <img src="assets/images/shop.jpg" alt="bamazon" class="rounded">
+          <p>
+            <a href="https://jdver.github.io/bAmazon/" class="font-weight-bold">bAmazon (Node.js)</a>
+            |
+            <a href="https://github.com/jdver/bAmazon"><i class="p-2 text-light fab fa-github"></i></a>
+          </p>
+          <div class="overlay rounded">
+            <div class="text">Shopping app via the command line <br> mySQL, Node.js</div>
+            <p>
+              <a href="https://jdver.github.io/bAmazon/" class="font-weight-bold">bAmazon (Node.js)</a>
+              |
+              <a href="https://github.com/jdver/bAmazon"><i class="p-2 text-light fab fa-github"></i></a>
+            </p>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="container">
+
+        <!-- Row 2 -->
+        <div class="row">
           <div class="col-sm">
-              <img src="assets/images/books.jpg" alt="goodQuotes" class="rounded">
+            <img src="assets/images/outdoors.jpg" alt="getout" class="rounded">
+            <p>
+              <a href="https://jdver.github.io/GetOutMore/" class="font-weight-bold">Get Out More</a>
+              |
+              <a href="https://github.com/jdver/GetOutMore"><i class="p-2 text-light fab fa-github"></i></a>
+            </p>
+            <div class="overlay rounded">
+              <div class="text">Event and weather finder <br> API, HTML, JavaScript</div>
               <p>
-                <a href="https://best-project-2-ever-created.herokuapp.com/" class="font-weight-bold">goodQuotes</a>
-                 | 
-                <a href="https://github.com/jdver/goodQuotes"><i class="p-2 text-light fab fa-github"></i></a>
+                <a href="https://jdver.github.io/GetOutMore/" class="font-weight-bold">Get Out More</a>
+                |
+                <a href="https://github.com/jdver/GetOutMore"><i class="p-2 text-light fab fa-github"></i></a>
               </p>
+            </div>
           </div>
           <div class="col-sm">
-              <img src="assets/images/shop.jpg" alt="bamazon" class="rounded">
+            <img src="assets/images/trivia.jpg" alt="trivia" class="rounded">
+            <p>
+              <a href="https://jdver.github.io/TriviaGame/" class="font-weight-bold">Disney Trivia</a>
+              |
+              <a href="https://github.com/jdver/TriviaGame"><i class="p-2 text-light fab fa-github"></i></a>
+            </p>
+            <div class="overlay rounded">
+              <div class="text">Disney trivia game <br> jQuery, JavaScript</div>
               <p>
-                <a href="https://jdver.github.io/bAmazon/" class="font-weight-bold">bAmazon (Node.js)</a>
-                 | 
-                <a href="https://github.com/jdver/bAmazon"><i class="p-2 text-light fab fa-github"></i></a>
+                <a href="https://jdver.github.io/TriviaGame/" class="font-weight-bold">Disney Trivia</a>
+                |
+                <a href="https://github.com/jdver/TriviaGame"><i class="p-2 text-light fab fa-github"></i></a>
               </p>
+            </div>
+          </div>
+          <div class="col-sm">
+            <img src="assets/images/giphy.jpg" alt="giftastic" class="rounded">
+            <p>
+              <a href="https://jdver.github.io/Giftastic/" class="font-weight-bold">Giftastic TV</a>
+              |
+              <a href="https://github.com/jdver/Giftastic"><i class="p-2 text-light fab fa-github"></i></a>
+            </p>
+            <div class="overlay rounded">
+                <div class="text">TV Show Giphy Search App <br> API, JavaScript</div>
+                <p>
+                    <a href="https://jdver.github.io/Giftastic/" class="font-weight-bold">Giftastic TV</a>
+                    |
+                    <a href="https://github.com/jdver/Giftastic"><i class="p-2 text-light fab fa-github"></i></a>
+                  </p>
+                  </div>
           </div>
         </div>
       </div>
       <div class="container">
-          <div class="row">
-            <div class="col-sm">
-                <img src="assets/images/outdoors.jpg" alt="getout" class="rounded">
+        <!-- Row 3 -->
+        <div class="row">
+          <div class="col-sm">
+            <img src="assets/images/psychic.jpg" alt="psychic" class="rounded">
+            <p>
+              <a href="https://jdver.github.io/Psychic-Game/" class="font-weight-bold">Psychic Game</a>
+              |
+              <a href="https://github.com/jdver/Psychic-Game"><i class="p-2 text-light fab fa-github"></i></a>
+            </p>
+            <div class="overlay rounded">
+                <div class="text">Letter guessing game <br>JavaScript</div>
                 <p>
-                  <a href="https://jdver.github.io/GetOutMore/" class="font-weight-bold">Get Out More</a>
-                  |
-                  <a href="https://github.com/jdver/GetOutMore"><i class="p-2 text-light fab fa-github"></i></a>
-                </p>
-            </div>
-            <div class="col-sm">
-                <img src="assets/images/trivia.jpg" alt="trivia" class="rounded">
-                <p>
-                  <a href="https://jdver.github.io/TriviaGame/" class="font-weight-bold">Disney Trivia</a>
-                   | 
-                  <a href="https://github.com/jdver/TriviaGame"><i class="p-2 text-light fab fa-github"></i></a>
-                </p>
-            </div>
-            <div class="col-sm">
-                <img src="assets/images/giphy.jpg" alt="giftastic" class="rounded">
-                <p>
-                  <a href="https://jdver.github.io/Giftastic/" class="font-weight-bold">Giftastic TV</a>
-                   | 
-                  <a href="https://github.com/jdver/Giftastic"><i class="p-2 text-light fab fa-github"></i></a>
-                </p>
-            </div>
+                    <a href="https://jdver.github.io/Psychic-Game/" class="font-weight-bold">Psychic Game</a>
+                    |
+                    <a href="https://github.com/jdver/Psychic-Game"><i class="p-2 text-light fab fa-github"></i></a>
+                  </p>
+                  </div>
           </div>
-        </div>
-        <div class="container">
-            <div class="row">
-              <div class="col-sm">
-                  <img src="assets/images/psychic.jpg" alt="psychic" class="rounded">
+          <div class="col-sm">
+            <img src="assets/images/gamemeet.jpg" alt="gaming" class="rounded">
+            <p>
+              <a href="https://seekingplayertwo.herokuapp.com/" class="font-weight-bold">Game Meet</a>
+              |
+              <a href="https://github.com/jdver/Game-Meet"><i class="p-2 text-light fab fa-github"></i></a>
+            </p>
+            <div class="overlay rounded">
+                <div class="text">Full Stack/MERN Application <br>REACT, mongoDB, JavaScript</div>
                 <p>
-                  <a href="https://jdver.github.io/Psychic-Game/" class="font-weight-bold">Psychic Game</a>
-                   | 
-                  <a href="https://github.com/jdver/Psychic-Game"><i class="p-2 text-light fab fa-github"></i></a>
-                </p>
-              </div>
-              <div class="col-sm">
-                  <img src="assets/images/gamemeet.jpg" alt="gaming" class="rounded">
-                  <p>
                     <a href="https://seekingplayertwo.herokuapp.com/" class="font-weight-bold">Game Meet</a>
-                     | 
+                    |
                     <a href="https://github.com/jdver/Game-Meet"><i class="p-2 text-light fab fa-github"></i></a>
                   </p>
-              </div>
-              <div class="col-sm">
-                  <img src="assets/images/friends.jpg" alt="friends" class="rounded">
-                  <p>
+                  </div>
+          </div>
+          <div class="col-sm">
+            <img src="assets/images/friends.jpg" alt="friends" class="rounded">
+            <p>
+              <a href="https://sleepy-reef-83945.herokuapp.com/" class="font-weight-bold">Friend Finder</a>
+              |
+              <a href="https://github.com/jdver/FriendFinder"><i class="p-2 text-light fab fa-github"></i></a>
+            </p>
+            <div class="overlay rounded">
+                <div class="text">Friend compatibility quiz <br>API, Node.js, Express, JavaScript</div>
+                <p>
                     <a href="https://sleepy-reef-83945.herokuapp.com/" class="font-weight-bold">Friend Finder</a>
-                     | 
+                    |
                     <a href="https://github.com/jdver/FriendFinder"><i class="p-2 text-light fab fa-github"></i></a>
                   </p>
-              </div>
-            </div>
+                  </div>
           </div>
-          <div class="container">
-              <div class="row">
-                <div class="col-sm">
-                  
-                </div>
-                <div class="col-sm">
-                    <img src="assets/images/concert.jpg" alt="liri" class="rounded">
-                    <p>
-                      <a href="https://jdver.github.io/LIRI/" class="font-weight-bold">Liri Bot (Node.js)</a>
-                       | 
-                      <a href="https://github.com/jdver/LIRI"><i class="p-2 text-light fab fa-github"></i></a>
-                    </p>
-                </div>
-                <div class="col-sm">
-                  
-                </div>
-              </div>
-            </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+
+          </div>
+          <div class="col-sm">
+            <img src="assets/images/concert.jpg" alt="liri" class="rounded">
+            <p>
+              <a href="https://jdver.github.io/LIRI/" class="font-weight-bold">Liri Bot (Node.js)</a>
+              |
+              <a href="https://github.com/jdver/LIRI"><i class="p-2 text-light fab fa-github"></i></a>
+            </p>
+            <div class="overlay rounded">
+                <div class="text">Find local concerts, songs and movies <br>API, Node.js</div>
+                <p>
+                    <a href="https://jdver.github.io/LIRI/" class="font-weight-bold">Liri Bot (Node.js)</a>
+                    |
+                    <a href="https://github.com/jdver/LIRI"><i class="p-2 text-light fab fa-github"></i></a>
+                  </p>
+                  </div>
+          </div>
+          <div class="col-sm">
+
+          </div>
+        </div>
+      </div>
   </section>
 
   
@@ -206,6 +325,7 @@ footer {
      Copyright 2019 Jose D Vera &copy;
     </div>
   </footer>
+  
 </body>
 
 </html>
